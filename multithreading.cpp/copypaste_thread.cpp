@@ -7,7 +7,7 @@ using namespace std;
 // A dummy function 
 void foo(int Z) 
 { 
-    for (int i = 0; i < Z; i++) { 
+    for (int i = 0; i < 100000; i++) { 
         cout << "Thread using function"
                " pointer as callable\n"; 
     } 
@@ -18,7 +18,7 @@ class thread_obj {
 public: 
     void operator()(int x) 
     { 
-        for (int i = 0; i < x; i++) 
+        for (int i = 0; i < 100000; i++) 
             cout << "Thread using function"
                   " object as  callable\n"; 
     } 
@@ -31,11 +31,11 @@ int main()
   
     // This thread is launched by using  
     // function pointer as callable 
-    thread th1(foo, 3); 
+    thread th1(foo, 1000); 
   
     // This thread is launched by using 
     // function object as callable 
-    thread th2(thread_obj(), 3); 
+    thread th2(thread_obj(), 1000); 
   
     // Define a Lambda Expression 
     auto f = [](int x) { 
@@ -46,7 +46,7 @@ int main()
   
     // This thread is launched by using  
     // lamda expression as callable 
-    thread th3(f, 3); 
+    thread th3(f, 100); 
   
     // Wait for the threads to finish 
     // Wait for thread t1 to finish 
