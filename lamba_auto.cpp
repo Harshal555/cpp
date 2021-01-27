@@ -4,7 +4,9 @@ int main()
 {
 	int a=10;
 	int b=20;
-	auto f=[&a,&b](int a,int b){return a+b;}(10,5);
-	cout<<f;
-	cout<<f;
+	[&a,&b](){a++;cout<< a+b<<endl;}();
+	//int f=[&a,&b](){a++;cout<< a+b<<endl;};
+	
+	//cout<<f;
+	cout<<a;
 }

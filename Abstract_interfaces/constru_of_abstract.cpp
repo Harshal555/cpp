@@ -4,6 +4,7 @@ class base
 {
 	public:
 		int x;
+		//base()=default;
 		base(int l)
 		{
 			cout<<"this is base "<<endl;
@@ -15,7 +16,7 @@ class derived:public base
 {
 	public:
 		int y;
-		derived(int b,int c):base( b)
+		derived(int b,int c):base(b)
 		{
 			cout<<"this is derived"<<endl;
 			y=c;

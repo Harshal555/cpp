@@ -18,7 +18,7 @@ class derived:public test
 {
 	void show()
 	{
-		cout<<"value of x in derived "<<++x<<endl;
+		cout<<"value of x in derived "<<x<<endl;
 	}
 };
 int main()

@@ -23,7 +23,11 @@ class child:public parent
 
 int main()
 {
+/*	parent p;
+	p.display();
+*/
 	child a;
 	a.parent::display();
+	
 }
 

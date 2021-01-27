@@ -24,6 +24,8 @@ class classD:public classB,public classC
 int main()
 {
 	classD obj;
-	obj.classC::a=10;
+	obj.a=10;
 	cout<<obj.classC::a;
+	//obj.a=10;this will work if you add virtual prefix to class
+	//cout<<a;
 }

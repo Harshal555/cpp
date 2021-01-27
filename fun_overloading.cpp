@@ -5,7 +5,7 @@ int add(int ,int ,int );
 int main()
 {
 int a,b,c,s1,s2;
-cout<<"enter two numbers";
+cout<<"enter three numbers";
 cin>>a>>b>>c;
 s1=add(a,b);
 cout<<"sum of first two number is"<<s1<<endl;

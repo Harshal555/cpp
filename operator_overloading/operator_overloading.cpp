@@ -11,7 +11,7 @@ class complex
 		{
 			real=x;
 			img=y;
-			display();
+		//	display();
 		}
 	        
 		complex operator+(complex v)
@@ -37,5 +37,5 @@ int main()
 	c=a+b;
 	
 //	complex c;
-       c.display();
+      c.display();
 }

@@ -3,10 +3,12 @@ using namespace std;
 class A
 {
 	
-	int a;
-	int b;
+const	int a;
+const	int b;
 	public:
-	A(int x,int y):a(x), b(y){}
+	A(int x,int y):a(x), b(y)//initializer list must be used
+	{
+	}
 
 	void show()
 	{
@@ -15,6 +17,7 @@ class A
 };
 A fun(int m,int n)
 {
+	cout<<"fun is called"<<endl;
 	return {m ,n};
 }
 int main()

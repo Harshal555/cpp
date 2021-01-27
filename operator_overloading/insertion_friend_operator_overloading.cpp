@@ -26,6 +26,6 @@ int main()
 {
 	complex c(10,12);
 	cout<<c;
-	operator<<(cout,c);
+//	operator<<(cout,c);
       
 }

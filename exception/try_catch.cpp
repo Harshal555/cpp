@@ -1,14 +1,6 @@
 #include<iostream>
 int divv(int x,int y);
 using namespace std;
-class myexception1: exception
-{
-};
-class myexception2:public myexception1
-{
-
-};
-
 int main()
 {
 	int a,b;
@@ -23,32 +15,24 @@ int main()
 	}
 	catch(int e)
 	{
-		cout<<"int divide by zero";
+	cout<<"int divide by zero"<<endl;
 	}
 
 	catch(double e)
 	{
-		cout<<"double divide by zero";
+		cout<<"double divide by zero"<<endl;
 	}
 
 	catch(char e)
 	{
-		cout<<"string divide by zero"<<e;
+		cout<<"string divide by zero"<<endl;
 	}
 
-/*	catch(myexception2 e)
-	{
-		cout<<"myexception2 divide by zero"<<e;
-	}
-	catch(myexception1() e)
-	{
-		cout<<"myexception1 divide by zero"<<e;
-	}
-*/
 	catch(...)
 	{
-		cout<<"... divide by zero";
+		cout<<"... divide by zero"<<endl;
 	}
+	cout<<"this always execute"<<endl;
 
 
 }
@@ -56,7 +40,7 @@ int divv(int x,int y)
 {
 	if(y==0)
 	{
-		throw myexception2();
+		throw 1;
 	}
 	else
 		return x/y;

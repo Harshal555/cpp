@@ -4,7 +4,7 @@ int main()
 {
 	int x=10;
 	int y=20;
-	[x,y](int x,int y){cout<<"multiplication is "<<x*y<<endl;}(10,5);
+	[x,y](int x,int y){cout<<"multiplication is "<<x*y<<endl;}(x,y);
 
 	//[&x,&y](int x,int y){cout<<"additiontion is "<<++x+(++y)<<endl;}();
 	//[&](int x,int y){cout<<"additiontion is "<<++x+(++y)<<endl;}();
