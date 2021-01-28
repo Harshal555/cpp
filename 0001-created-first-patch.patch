@@ -1,0 +1,25 @@
+From 650c6bb0efa71e38226b5f0c73f52d373ba2eb57 Mon Sep 17 00:00:00 2001
+From: Harshal Gajjalwar <harshal.gajjalwar@einfochips.com>
+Date: Thu, 28 Jan 2021 17:37:00 +0530
+Subject: [PATCH] created first patch
+
+---
+ creating_1patch.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 creating_1patch.c
+
+diff --git a/creating_1patch.c b/creating_1patch.c
+new file mode 100644
+index 0000000..ec883fb
+--- /dev/null
++++ b/creating_1patch.c
+@@ -0,0 +1,6 @@
++#include<stdio.h>
++int main()
++{
++	int a=10,b=20;
++	printf("addition od number is %d",a+b);
++}
+-- 
+2.17.1
+
